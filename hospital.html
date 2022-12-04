@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Hospital OOP</title>
+    <link rel="stylesheet" href="hospital.css"/>
+  </head>
+  <body>
+    <h1> Hospital Register</h1>
+    <ul>
+      <li>Fill the form bellow to add or reduce names from 
+        the respective departments.
+      </li>
+      <li>To add a patient, input name and desease 
+        then sellect admit patient button</li>
+      <li>The list of pre made variables follows bellow</li>
+      <div class="deseases">
+        <div>
+          <p>For cardic deseases</p>
+          <ul>
+            <li>hypertension</li>
+            <li>stroke</li>
+            <li>attack</li>
+          </ul>
+        </div>
+        <div>
+          <p>For surgical issues</p>
+          <ul>
+            <li>fracture</li>
+            <li>tumoil</li>
+            <li>opperation</li>
+          </ul>
+        </div>
+        <div>
+          <p>For maternity issues</p>
+          <ul>
+            <li>bed rest</li>
+            <li>antinatal</li>
+            <li>delivery</li>
+          </ul>
+        </div>
+        
+      </div>
+      <li>To add a worker, imput his/her name and department 
+          and sellect RecruteWorker button. </li>
+          <li>For the respective fields you can use<br>
+           {cardiac doctor, cardiac nurse,}, {surgical doctor, surgical nurse},{maternity doctor, maternity nurse}</li>
+
+    </ul>
+    <hr/>
+    <br/>
+    <br/>
+
+    <section
+      style="display: flex; justify-content: flex-end"
+      id="outcome">
+      
+      <section><br/><br/><br/><br/><br/><br/>
+        <input class="seachbox" id="display2" type="search" placeholder="Name" /><br/><br/>
+        <input class="seachbox" id="display1" type="search" placeholder="Department / Desease"/>
+        <br />
+        <button onclick="Mainfunc()" class="button1">Admit patient</button>
+        <button onclick="RecruteWorker()" class="button2">Recrute Woker</button>
+      </section>
+      
+      <div>
+        <h3>Cardiac Department</h3><hr/>
+        <p>Doctors</p>
+        <ul id="cardiac-doctors"></ul>
+        <p>Nurses</p>
+        <ul id="cardiac-nurses"></ul>
+        <p>Patients</p>
+        <ul id="cardiac-patients"></ul>
+      </div>
+
+      <div>
+        <h3>Surgical Department</h3><hr/>
+        <p>Doctors</p>
+        <ul id="surgical-doctors"></ul>
+        <p>Nurses</p>
+        <ul id="surgical-nurses"></ul>
+        <p>Patients</p>
+        <ul id="surgical-patients"></ul>
+   
+      </div>
+      <div>
+        <h3>Maternity Department</h3><hr/>
+        <p>Doctors</p>
+        <ul id="maternity-doctors"></ul>
+        <p>Nurses</p>
+        <ul id="maternity-nurses"></ul>
+        <p>Patients</p>
+        <ul id="maternity-patients"></ul>
+
+        <br/><br/><br/>
+      </div><br/><br/><br/>
+    </section>
+
+    <script src="hospital.js"></script>
+  </body>
+</html>
